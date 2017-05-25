@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="@192.168.0.119" uuid="cf7720f9-e2e5-422e-a583-d9ddcd00ec41">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@192.168.0.119:1521:orcl</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="spider@192.168.1.198" uuid="9671c966-d5f2-43d6-ac3e-cf8051002b5c">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://192.168.1.198:5432/spider</jdbc-url>
+    </data-source>
+  </component>
+</project>

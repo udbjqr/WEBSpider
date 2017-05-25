@@ -6,12 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="common" />
+        <module name="OpenTenders" />
+        <module name="Spider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
       <module name="identification" target="1.8" />
+      <module name="OpenTenders" target="1.8" />
+      <module name="Spider" target="1.8" />
       <module name="WEBSpider" target="1.8" />
     </bytecodeTargetLevel>
   </component>

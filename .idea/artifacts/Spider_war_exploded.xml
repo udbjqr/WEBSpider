@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Spider:war exploded">
+    <output-path>$PROJECT_DIR$/Spider/target/designer</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Spider" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
+          <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.32" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.8.2" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.8.2" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:unknown" />
+          <element id="library" level="project" name="Maven: com.jinguang:identification:0.1" />
+          <element id="library" level="project" name="Maven: com.jinguang:common:1.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Spider/target/designer/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Spider/web/Web" />
+    </root>
+  </artifact>
+</component>
