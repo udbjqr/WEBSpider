@@ -23,7 +23,8 @@ public class WEBAddressFactory extends AbstractPersistenceFactory<WEBAddress> {
 		addField("regular_model", String.class, null, false, false);
 		addField("flag", Integer.class, null, false, false);
 		addField("parallelism", JSONObject.class, null, true, false);
-		addField("type", Integer.class, "0", true, false);
+		addField("type", String.class, "0", true, false);
+		addField("base_url", String.class, "", true, false);
 
 		init();
 	}

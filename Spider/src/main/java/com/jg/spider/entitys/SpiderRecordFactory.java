@@ -1,6 +1,5 @@
 package com.jg.spider.entitys;
 
-import com.alibaba.fastjson.JSONObject;
 import com.jg.common.persistence.AbstractPersistenceFactory;
 import com.jg.identification.User;
 
@@ -23,8 +22,9 @@ public class SpiderRecordFactory extends AbstractPersistenceFactory<SpiderRecord
 		addField("create_time", Date.class, "now()", true, false);
 		addField("get_url", String.class, null, true, false);
 		addField("is_succeed", Integer.class, null, false, false);
-		addField("record", JSONObject.class, null, false, false);
+		addField("record", String.class, null, false, false);
 
+		setIsCheck(false);
 		init();
 	}
 

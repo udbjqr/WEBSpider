@@ -1,6 +1,5 @@
 package com.jg.spider.entitys;
 
-import com.alibaba.fastjson.JSONObject;
 import com.jg.common.persistence.AbstractPersistenceFactory;
 import com.jg.identification.User;
 
@@ -22,7 +21,7 @@ public class AcquireOriginalFactory extends AbstractPersistenceFactory<AcquireOr
 
 		addField("web_address_id", Integer.class, null, false, false);
 		addField("is_work_out", Integer.class, null, false, false);
-		addField("content", JSONObject.class, null, false, false);
+		addField("content", String.class, null, false, false);
 		addField("absolute_url", String.class, null, true, false);
 		addField("create_time", Date.class, null, true, false);
 

@@ -13,14 +13,14 @@ import java.util.Date;
  */
 
 public class AuditDataFactory extends AbstractPersistenceFactory<AuditData> {
-	public static final AuditDataFactory WEB_ADDRESS_FACTORY = new AuditDataFactory();
+	public static final AuditDataFactory AUDIT_DATA_FACTORY = new AuditDataFactory();
 
 	private AuditDataFactory() {
 		this.tableName = "audit_data";
 
 		addField("id", Integer.class, null, true, true);
 		addField("audit_data", JSONObject.class, null, false, false);
-		addField("create_time", Date.class, null, true, false);
+		addField("create_time", Date.class, "default", true, false);
 		addField("is_upload", Integer.class, null, false, false);
 
 		setIsCheck(false);

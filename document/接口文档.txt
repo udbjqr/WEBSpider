@@ -1,0 +1,63 @@
+访问地址根目录：
+http://192.168.1.198:8080/WebSpider/
+
+访问方式：post
+参数方式：
+传输内容： {type：请求类型,。。。。。}
+
+所有返回值：
+{
+	'code' 返回值代码,
+	'data': 返回值
+}
+
+编辑页面：
+url: audit
+网站列表：
+{"type":"webList"}
+返回：
+{
+  "code": 0,
+  "data": {
+      "list":[
+          {
+            "label": 网站名称
+            "value": 网站的Id
+          }
+      ]
+  },
+  "message": "成功"
+}
+
+明细列表：
+{"type":"list","web_id":网站的id}
+返回：
+{
+  "code": 0,
+  "data": {
+      "list":[
+          {
+            "id": 获取的数据的Id，唯一标识
+            "data": {"url": "http://ggzy.jiangxi.gov.cn//jxzbw/ZtbInfo/ZBGG_Detail.aspx?InfoID=388e1faa-83fd-4e0d-901c-6e92b25bf257&CategoryNum=002001002", "webType": "1", "money": "1124.87 万元", "title": "袁河经济开发区创新创业暨研发中心功能化改造项目", "region": "渝水区", "address": "袁河经济开发区", "project": "袁河经济开发区创新创业暨研发中心功能化改造项目", "tenderee": "新余经济开发区祥瑞建设投资有限公司", "createTime": "2017-05-26 17:29:03"}
+          },
+          ...
+      ]
+  },
+  "message": "成功"
+}
+
+修改后保存：
+{"type":"save",
+	"id":id,
+	"url":	"http://ggzy.jiangxi.gov.cn//jxzbw/ZtbInfo/ZBGG_Detail.aspx?InfoID=388e1faa-83fd-4e0d-901c-6e92b25bf257&CategoryNum=002001002",
+	"webType": "1",
+	"money": "1124.87 万元",
+	"title": "袁河经济开发区创新创业暨研发中心功能化改造项目",
+	"region": "渝水区",
+	"address": "袁河经济开发区",
+	"project": "袁河经济开发区创新创业暨研发中心功能化改造项目",
+	"tenderee": "新余经济开发区祥瑞建设投资有限公司"}
+
+返回：
+  {
+    "code": 0}

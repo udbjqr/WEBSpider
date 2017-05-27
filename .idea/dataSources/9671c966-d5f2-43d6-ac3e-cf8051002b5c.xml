@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-05-25.16:46:47.726</IntrospectionTimestamp>
-      <IntrospectionStateNumber>2428</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-05-26.14:43:48.053</IntrospectionTimestamp>
+      <IntrospectionStateNumber>2450</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -89,7 +89,7 @@
     <table id="21" parent="3" name="spider_record">
       <ObjectId>16862</ObjectId>
       <Comment>保存每次抓取的记录</Comment>
-      <StateNumber>2409</StateNumber>
+      <StateNumber>2444</StateNumber>
     </table>
     <table id="22" parent="3" name="user_authorization">
       <ObjectId>16873</ObjectId>
@@ -99,7 +99,7 @@
     <table id="23" parent="3" name="web_address">
       <ObjectId>16881</ObjectId>
       <Comment>此表保存需要抓取的URL首页地址</Comment>
-      <StateNumber>2421</StateNumber>
+      <StateNumber>2450</StateNumber>
     </table>
     <column id="24" parent="14" name="id">
       <Position>1</Position>
@@ -428,9 +428,9 @@
       <Comment>记录此次抓取情况。
 未成功记录返回错误信息
 成功记录结果集</Comment>
-      <DataType>jsonb|0</DataType>
+      <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2409</StateNumber>
+      <StateNumber>2444</StateNumber>
     </column>
     <index id="75" parent="21" name="pk_spider_record">
       <ObjectId>16871</ObjectId>
@@ -513,15 +513,25 @@
     </column>
     <column id="88" parent="23" name="type">
       <Position>7</Position>
-      <DataType>integer|0</DataType>
-      <StateNumber>2416</StateNumber>
+      <DataType>varchar(2000)|0</DataType>
+      <StateNumber>2450</StateNumber>
     </column>
-    <index id="89" parent="23" name="pk_web_address">
+    <column id="89" parent="23" name="base_url">
+      <Position>8</Position>
+      <DataType>varchar(200)|0</DataType>
+      <StateNumber>2429</StateNumber>
+    </column>
+    <index id="90" parent="23" name="pk_web_address">
       <ObjectId>16888</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="90" parent="23" name="pk_web_address">
+    <index id="91" parent="23" name="web_address_name_uindex">
+      <ObjectId>16907</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="92" parent="23" name="pk_web_address">
       <ObjectId>16889</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_web_address</UnderlyingIndexName>

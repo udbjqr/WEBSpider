@@ -20,7 +20,7 @@ public class CleanUpDataFactory extends AbstractPersistenceFactory<CleanUpData> 
 
 		addField("id", Integer.class, null, true, true);
 		addField("clean_up_data", JSONObject.class, null, false, false);
-		addField("create_time", Date.class, null, true, false);
+		addField("create_time", Date.class, "DEFAULT", true, false);
 		addField("is_audit", Integer.class, null, false, false);
 
 		setIsCheck(false);
