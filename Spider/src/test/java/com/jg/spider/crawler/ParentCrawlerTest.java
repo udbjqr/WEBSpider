@@ -14,11 +14,11 @@ public class ParentCrawlerTest {
 
 	@Test
 	public void testGetMater() {
-		ParentCrawler parentCrawler = ParentCrawler.getInstance(200);
+		ParentCrawler parentCrawler = ParentCrawler.getInstance(201);
 		boolean getted = parentCrawler.obtainDetail();
 
 		log.info("成功标志：{}", getted);
-		parentCrawler.getChildren().forEach(it -> {
+		parentCrawler.getChildren().forEach(it -> { 
 			try {
 				Long time = Math.round(2000 + Math.random() * 3000);
 				log.info("休息一下，时间：" + time);

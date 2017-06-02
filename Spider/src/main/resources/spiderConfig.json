@@ -1,1 +1,7 @@
-{}
+{
+	"scheduled": {
+		"loadWeb": {
+			"interval": 10800000
+		}
+	}
+}
